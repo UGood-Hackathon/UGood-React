@@ -9,11 +9,10 @@ import SignUp from '../SignUp/SignUp'
 import SignIn from '../SignIn/SignIn'
 import SignOut from '../SignOut/SignOut'
 import ChangePassword from '../ChangePassword/ChangePassword'
-import Home from '../Home'
-import User from '../User'
-import Start from '../Start'
-import Resources from '../Resources'
-
+import Home from '../Home/Home'
+import User from '../User/User'
+import Start from '../Start/Start'
+import Resources from '../Resources/Resources'
 
 class App extends Component {
   constructor () {
@@ -48,6 +47,18 @@ class App extends Component {
           />
         ))}
         <main className="container">
+          <Route exact path='/' render={() => (
+            <Home alert={this.alert} setUser={this.setUser} />
+          )} />
+          <Route exact path='/start' render={() => (
+            <Start alert={this.alert} setUser={this.setUser} />
+          )} />
+          <Route exact path='/resources' render={() => (
+            <Resources alert={this.alert} setUser={this.setUser} />
+          )} />
+          <Route path='/user' render={() => (
+            <User alert={this.alert} setUser={this.setUser} />
+          )} />
           <Route path='/sign-up' render={() => (
             <SignUp alert={this.alert} setUser={this.setUser} />
           )} />
