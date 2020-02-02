@@ -3,8 +3,8 @@ import { Route } from 'react-router-dom'
 // import './App.scss'
 
 import AuthenticatedRoute from '../AuthenticatedRoute/AuthenticatedRoute'
-import AutoDismissAlert from '../AutoDismissAlert/AutoDismissAlert'
 import Header from '../Header/Header'
+import BottomNav from '../BottomNav/BottomNav'
 import SignUp from '../SignUp/SignUp'
 import SignIn from '../SignIn/SignIn'
 import SignOut from '../SignOut/SignOut'
@@ -33,21 +33,13 @@ class App extends Component {
   }
 
   render () {
-    const { alerts, user } = this.state
+    const { user } = this.state
 
     return (
       <Fragment>
         <Header user={user} />
-        {alerts.map((alert, index) => (
-          <AutoDismissAlert
-            key={index}
-            heading={alert.heading}
-            variant={alert.variant}
-            message={alert.message}
-          />
-        ))}
         <main className="container">
-          <Route exact path='/' render={() => (
+          <Route exact path='/home' render={() => (
             <Home alert={this.alert} setUser={this.setUser} />
           )} />
           <Route exact path='/start' render={() => (
@@ -72,6 +64,7 @@ class App extends Component {
             <ChangePassword alert={this.alert} user={user} />
           )} />
         </main>
+        <BottomNav user={user} />
       </Fragment>
     )
   }

@@ -1,1 +1,81 @@
 @import '~bootstrap/scss/bootstrap';
+// @import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+
+body {
+  align-items: center;
+  background-color: #B673CE;
+  font-family: 'Bebas Neue', arial;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.bottomNav {
+  align-items: center;
+  background-color: #4C3E8E !important;
+  color: #ff6464 !important;
+  font-family: 'Bebas Neue', arial;
+  font-size: 1.5rem;
+  height: 10%vh;
+  justify-content: center;
+}
+
+.link {
+  color: #ff6464 !important;
+}
+
+.logo {
+  margin: 1rem;
+}
+
+.page {
+  align-items: center;
+  justify-content: center;
+}
+
+.page-headers {
+  color: #01024e;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.sos-button {
+  align-items: center;
+  background-color: #4C3E8E !important;
+  border: 5px solid #ff6464;
+  border-radius: 15px;
+  color: #ff6464 !important;
+  font-family: 'Bebas Neue', arial;
+  font-size: 8rem;
+  height: 25rem;
+  justify-content: center;
+  width: 20rem;
+  margin: 10%;
+}
+
+.start-button {
+  align-items: center;
+  background-color: #4C3E8E !important;
+  border: 3px solid #ff6464;
+  border-radius: 15px;
+  color: #ff6464 !important;
+  font-family: 'Bebas Neue', arial;
+  font-size: 2rem;
+  height: 4rem;
+  justify-content: center;
+  width: 15rem;
+  margin: 10%;
+}
+
+.topNav {
+    align-items: center;
+    background-color: #01024e !important;
+    justify-content: center;
+}
+
+.title {
+  color: #ff6464 !important;
+  font-family: 'Bebas Neue', arial;
+  font-size: 5rem;
+  padding: .25rem;
+}

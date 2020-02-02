@@ -7,13 +7,15 @@ import messages from '../AutoDismissAlert/messages'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 
-class ChangePassword extends Component {
+class Edit extends Component {
   constructor () {
     super()
 
     this.state = {
       oldPassword: '',
-      newPassword: ''
+      newPassword: '',
+      oldPhone: '',
+      newPhone: ''
     }
   }
 
@@ -32,7 +34,7 @@ class ChangePassword extends Component {
         message: messages.changePasswordSuccess,
         variant: 'success'
       }))
-      .then(() => history.push('/'))
+      .then(() => history.push('/home'))
       .catch(error => {
         console.error(error)
         this.setState({ oldPassword: '', newPassword: '' })
@@ -87,4 +89,4 @@ class ChangePassword extends Component {
   }
 }
 
-export default withRouter(ChangePassword)
+export default withRouter(Edit)
