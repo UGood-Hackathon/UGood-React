@@ -23,7 +23,7 @@ const authenticatedOptions = (
 const unauthenticatedOptions = (
   <Fragment>
     <h1 className="page-headers">Welcome!</h1>
-    <h2> Either Sign In or Sign Up to Get Started.</h2>
+    <h2> Please Sign In or Sign Up to Get Started.</h2>
     <Button href="#sign-up" className="navButton">Sign Up</Button>
     <Button href="#sign-in" className="navButton">Sign In</Button>
   </Fragment>

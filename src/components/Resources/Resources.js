@@ -37,7 +37,7 @@ const Resources = () => (
       </Card.Body>
     </Card>
     <br/>
-    <Card style={{ width: '18rem' }}>
+    <Card style={{ alignItems: 'center', width: '18rem' }}>
       <Card.Img variant="top" src="https://miro.medium.com/max/2746/1*OyAhbK4-3iRTqGNvOx5F_Q.png" />
       <Card.Body>
         <Card.Title>Resources for Survivors</Card.Title>

@@ -8,6 +8,7 @@ body {
   justify-content: center;
   margin-bottom: 6rem;
   margin-top: 0;
+  text-align: center;
 }
 
 .bottomNav {
@@ -17,6 +18,18 @@ body {
   font-family: 'Bebas Neue', arial;
   font-size: 1.5rem;
   height: 5rem;
+  justify-content: center;
+  text-align: center;
+}
+
+Card {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container {
+  align-items: center;
   justify-content: center;
 }
 
@@ -40,6 +53,7 @@ body {
   justify-content: center;
   width: 15rem;
   margin: 10%;
+  text-align: center;
 }
 
 .page {
@@ -52,6 +66,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 1rem;
+  text-align: center;
 }
 
 .sos-button {
@@ -66,6 +81,7 @@ body {
   justify-content: center;
   width: 20rem;
   margin: 10%;
+  text-align: center;
 }
 
 .start-button {
@@ -80,12 +96,14 @@ body {
   justify-content: center;
   width: 15rem;
   margin: 10%;
+  text-align: center;
 }
 
 .topNav {
     align-items: center;
     background-color: #01024e !important;
     justify-content: center;
+    text-align: center;
 }
 
 .title {
@@ -93,4 +111,5 @@ body {
   font-family: 'Bebas Neue', arial;
   font-size: 5rem;
   padding: .25rem;
+  text-align: center;
 }
