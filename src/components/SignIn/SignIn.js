@@ -48,9 +48,9 @@ class SignIn extends Component {
     const { email, password } = this.state
 
     return (
-      <div className="row">
+      <div className="row form">
         <div className="col-sm-10 col-md-8 mx-auto mt-5">
-          <p><a href="#user">Go Back</a></p>
+          <p className="back"><a href="#user">Go Back</a></p>
           <h1>Sign In</h1>
           <Form onSubmit={this.onSignIn}>
             <Form.Group controlId="email">

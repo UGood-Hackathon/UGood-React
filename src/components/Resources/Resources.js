@@ -11,7 +11,7 @@ import Card from 'react-bootstrap/Card'
 const Resources = () => (
   <Fragment>
     <h1 className="page-headers">Resources</h1>
-    <Card style={{ width: '18rem' }}>
+    <Card style={{ width: '100%vw' }}>
       <Card.Img variant="top" src="https://www.executivefantasyhotels.com/wp-content/uploads/2018/01/First-Date-Ideas.jpg" />
       <Card.Body>
         <Card.Title>How to be Safe on a Date</Card.Title>
@@ -24,7 +24,7 @@ const Resources = () => (
       </Card.Body>
     </Card>
     <br/>
-    <Card style={{ width: '18rem' }}>
+    <Card style={{ width: '100%vw' }}>
       <Card.Img variant="top" src="https://images.ctfassets.net/81iqaqpfd8fy/5I6HsA6kM04QmyKYyaw6aq/3390773ea9213a1cebe67efb4af60b28/Human_Trafficking.jpg?h=620&w=1440" />
       <Card.Body>
         <Card.Title>Be Aware of Human Trafficking</Card.Title>
@@ -37,7 +37,7 @@ const Resources = () => (
       </Card.Body>
     </Card>
     <br/>
-    <Card style={{ alignItems: 'center', width: '18rem' }}>
+    <Card style={{ width: '100%vw' }}>
       <Card.Img variant="top" src="https://miro.medium.com/max/2746/1*OyAhbK4-3iRTqGNvOx5F_Q.png" />
       <Card.Body>
         <Card.Title>Resources for Survivors</Card.Title>

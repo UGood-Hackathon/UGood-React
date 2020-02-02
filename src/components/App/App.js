@@ -38,21 +38,21 @@ class App extends Component {
     return (
       <Fragment>
         <Header user={user} />
-        <main className="container">
+        <main className="container page">
           <Route exact path='/' render={() => (
-            <Home alert={this.alert} setUser={this.setUser} />
+            <Home alert={this.alert} setUser={this.setUser} user={user} />
           )} />
           <Route path='/home' render={() => (
-            <Home alert={this.alert} setUser={this.setUser} />
+            <Home alert={this.alert} setUser={this.setUser} user={user} />
           )} />
           <Route exact path='/start' render={() => (
-            <Start alert={this.alert} setUser={this.setUser} />
+            <Start alert={this.alert} setUser={this.setUser} user={user} />
           )} />
           <Route exact path='/resources' render={() => (
             <Resources alert={this.alert} setUser={this.setUser} />
           )} />
           <Route path='/user' render={() => (
-            <User alert={this.alert} setUser={this.setUser} />
+            <User alert={this.alert} setUser={this.setUser} user={user} />
           )} />
           <Route path='/sign-up' render={() => (
             <SignUp alert={this.alert} setUser={this.setUser} />

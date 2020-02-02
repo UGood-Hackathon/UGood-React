@@ -2,23 +2,22 @@ import React, { Fragment } from 'react'
 import { Button } from 'react-bootstrap'
 import Card from 'react-bootstrap/Card'
 
-// <Card.Text> Email: {user.email}</Card.Text>
-// <Card.Text> Phone Number: {user.phone}</Card.Text>
-const authenticatedOptions = (
-  <Fragment>
-    <h1 className="page-headers">Your Profile</h1>
-    <Button href="#edit" className="navButton">Edit Information</Button>
-    <Button href="#sign-out" className="navButton">Sign Out</Button>
-
-    <Card style={{ width: '18rem' }}>
-      <Card.Body>
-        <Card.Title>Your Current Information:</Card.Title>
-        <Card.Text> Email: {this.user}</Card.Text>
-        <Card.Text> Phone Number: {this.user}</Card.Text>
-      </Card.Body>
-    </Card>
-  </Fragment>
-)
+function authenticatedOptions (props) {
+  return (
+    <Fragment>
+      <h1 className="page-headers">Your Profile</h1>
+      <Button href="#edit" className="navButton">Edit Information</Button>
+      <Button href="#sign-out" className="navButton">Sign Out</Button>
+      <Card style={{ width: '100%vw', backgroundColor: '#ff6464', color: '#01024e' }}>
+        <Card.Body>
+          <Card.Title>Your Current Information:</Card.Title>
+          <Card.Text> Email: {props.user.email}</Card.Text>
+          <Card.Text> Phone Number: {props.user.phone}</Card.Text>
+        </Card.Body>
+      </Card>
+    </Fragment>
+  )
+}
 
 const unauthenticatedOptions = (
   <Fragment>
@@ -29,11 +28,11 @@ const unauthenticatedOptions = (
   </Fragment>
 )
 
-const User = ({ user }) => {
-  console.log('User is: ', user)
-  if (user) {
+const User = (props) => {
+  console.log('User is: ', props.user)
+  if (props.user) {
     console.log('User is authenticated')
-    return authenticatedOptions
+    return authenticatedOptions(props)
   } else {
     console.log('unauthenticated')
     return unauthenticatedOptions

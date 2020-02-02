@@ -22,15 +22,17 @@ body {
   text-align: center;
 }
 
-Card {
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+.back a {
+  color: #01024e !important;
 }
 
 .container {
   align-items: center;
   justify-content: center;
+}
+
+.form {
+  text-align: left;
 }
 
 .link {
@@ -52,7 +54,7 @@ Card {
   height: 4rem;
   justify-content: center;
   width: 15rem;
-  margin: 10%;
+  margin: 5%;
   text-align: center;
 }
 
@@ -77,10 +79,10 @@ Card {
   color: #ff6464 !important;
   font-family: 'Bebas Neue', arial;
   font-size: 8rem;
-  height: 25rem;
+  height: 28rem;
   justify-content: center;
   width: 20rem;
-  margin: 10%;
+  margin: 8%;
   text-align: center;
 }
 
