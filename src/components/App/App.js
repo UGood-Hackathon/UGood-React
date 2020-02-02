@@ -8,7 +8,7 @@ import BottomNav from '../BottomNav/BottomNav'
 import SignUp from '../SignUp/SignUp'
 import SignIn from '../SignIn/SignIn'
 import SignOut from '../SignOut/SignOut'
-import ChangePassword from '../ChangePassword/ChangePassword'
+import Edit from '../EditInfo/EditInfo'
 import Home from '../Home/Home'
 import User from '../User/User'
 import Start from '../Start/Start'
@@ -60,8 +60,8 @@ class App extends Component {
           <AuthenticatedRoute user={user} path='/sign-out' render={() => (
             <SignOut alert={this.alert} clearUser={this.clearUser} user={user} />
           )} />
-          <AuthenticatedRoute user={user} path='/change-password' render={() => (
-            <ChangePassword alert={this.alert} user={user} />
+          <AuthenticatedRoute user={user} path='/edit' render={() => (
+            <Edit alert={this.alert} user={user} />
           )} />
         </main>
         <BottomNav user={user} />

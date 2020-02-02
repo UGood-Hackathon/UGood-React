@@ -4,6 +4,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@iconify/icons-mdi": "^1.0.60",
+    "@iconify/react": "^1.1.1",
     "@mdi/font": "^4.8.95",
     "autoprefixer": "7.1.6",
     "axios": "^0.18.0",
