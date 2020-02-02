@@ -53,3 +53,19 @@ export const changePassword = (passwords, user) => {
     }
   })
 }
+
+// export const changePhone = (phones, user) => {
+//   return axios({
+//     url: apiUrl + '/change-password',
+//     method: 'PATCH',
+//     headers: {
+//       'Authorization': `Token token=${user.token}`
+//     },
+//     data: {
+//       passwords: {
+//         old: passwords.oldPassword,
+//         new: passwords.newPassword
+//       }
+//     }
+//   })
+// }

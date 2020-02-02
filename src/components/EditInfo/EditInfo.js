@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
 
 import { changePassword } from '../../api/auth'
+// import { changePhone } from '../../api/auth'
 import messages from '../AutoDismissAlert/messages'
 
 import Form from 'react-bootstrap/Form'
@@ -45,6 +46,49 @@ class Edit extends Component {
         })
       })
   }
+
+  // onChangePhone = event => {
+  //   event.preventDefault()
+  //
+  //   const { alert, history, user } = this.props
+  //
+  //   changePhone(this.state, user)
+  //     .then(() => alert({
+  //       heading: 'Change Phone Number Success',
+  //       variant: 'success'
+  //     }))
+  //     .then(() => history.push('/home'))
+  //     .catch(error => {
+  //       console.error(error)
+  //       this.setState({ phone: '' })
+  //       alert({
+  //         heading: 'Change Phone Number Failed',
+  //         variant: 'danger'
+  //       })
+  //     })
+  // }
+
+  // <h1>Change Phone Number</h1>
+  // <p>Current Phone Number: {this.user.phone}</p>
+  // <Form onSubmit={this.onChangePhone}>
+  //   <Form.Group controlId="newPhone">
+  //     <Form.Label>New Phone Number</Form.Label>
+  //     <Form.Control
+  //       required
+  //       name="newPhone"
+  //       value={newPhone}
+  //       type="phone"
+  //       placeholder="New Phone Number"
+  //       onChange={this.handleChange}
+  //     />
+  //   </Form.Group>
+  //   <Button
+  //     variant="primary"
+  //     type="submit"
+  //   >
+  //     Submit
+  //   </Button>
+  // </Form>
 
   render () {
     const { oldPassword, newPassword } = this.state

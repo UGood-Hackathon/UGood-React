@@ -28,7 +28,11 @@ class SignIn extends Component {
 
     signIn(this.state)
       .then(res => setUser(res.data.user))
-      .then(() => history.push('/home'))
+      .then(res => console.log(this.state.user))
+      .then(() => history.push({
+        pathname: '/home',
+        state: {}
+      }))
       .catch(error => {
         console.error(error)
         this.setState({ email: '', password: '' })

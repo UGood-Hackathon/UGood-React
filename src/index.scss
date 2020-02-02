@@ -6,7 +6,8 @@ body {
   background-color: #B673CE;
   font-family: 'Bebas Neue', arial;
   justify-content: center;
-  margin-bottom: 5rem;
+  margin-bottom: 6rem;
+  margin-top: 0;
 }
 
 .bottomNav {
@@ -15,7 +16,7 @@ body {
   color: #ff6464 !important;
   font-family: 'Bebas Neue', arial;
   font-size: 1.5rem;
-  height: 10%vh;
+  height: 5rem;
   justify-content: center;
 }
 
@@ -25,6 +26,20 @@ body {
 
 .logo {
   margin: 1rem;
+}
+
+.navButton {
+  align-items: center;
+  background-color: #4C3E8E !important;
+  border: 3px solid #ff6464;
+  border-radius: 15px;
+  color: #ff6464 !important;
+  font-family: 'Bebas Neue', arial;
+  font-size: 2rem;
+  height: 4rem;
+  justify-content: center;
+  width: 15rem;
+  margin: 10%;
 }
 
 .page {

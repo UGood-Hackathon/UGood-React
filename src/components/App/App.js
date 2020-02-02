@@ -39,7 +39,10 @@ class App extends Component {
       <Fragment>
         <Header user={user} />
         <main className="container">
-          <Route exact path='/home' render={() => (
+          <Route exact path='/' render={() => (
+            <Home alert={this.alert} setUser={this.setUser} />
+          )} />
+          <Route path='/home' render={() => (
             <Home alert={this.alert} setUser={this.setUser} />
           )} />
           <Route exact path='/start' render={() => (

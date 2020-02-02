@@ -14,7 +14,8 @@ class SignUp extends Component {
     this.state = {
       email: '',
       password: '',
-      passwordConfirmation: ''
+      passwordConfirmation: '',
+      phone: ''
     }
   }
 
@@ -30,10 +31,13 @@ class SignUp extends Component {
     signUp(this.state)
       .then(() => signIn(this.state))
       .then(res => setUser(res.data.user))
-      .then(() => history.push('/home'))
+      .then(() => history.push({
+        pathname: '/home',
+        state: {}
+      }))
       .catch(error => {
         console.error(error)
-        this.setState({ email: '', password: '', passwordConfirmation: '' })
+        this.setState({ email: '', password: '', passwordConfirmation: '', phone: '' })
         alert({
           heading: 'Sign Up Failed',
           message: messages.signUpFailure,
