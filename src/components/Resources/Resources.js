@@ -29,7 +29,7 @@ const Resources = () => (
       <Card.Body>
         <Card.Title>Be Aware of Human Trafficking</Card.Title>
         <Card.Text>
-          Anyone can become a victim of human trafficking and your dad probably isnapos;nt able to go all &ldquo;Nicholas Cage in Taken&ldquo; to save you. Recognizing the signs of human trafficking is not only important for you but for everyone in society.
+          Anyone can become a victim of human trafficking and your dad probably isn&apos;t able to go all &ldquo;Nicholas Cage in Taken&ldquo; to save you. Recognizing the signs of human trafficking is not only important for you but for everyone in society.
         </Card.Text>
       </Card.Body>
       <Card.Body>
