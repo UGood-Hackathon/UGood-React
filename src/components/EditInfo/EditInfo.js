@@ -4,6 +4,8 @@ import { withRouter } from 'react-router-dom'
 import { changePassword } from '../../api/auth'
 // import { changePhone } from '../../api/auth'
 import messages from '../AutoDismissAlert/messages'
+import Icon from '@mdi/react'
+import { mdiArrowLeftBold } from '@mdi/js'
 
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
@@ -96,7 +98,8 @@ class Edit extends Component {
     return (
       <div className="row form">
         <div className="col-sm-10 col-md-8 mx-auto mt-5">
-          <p className="back"><a href="#user">Go Back</a></p>
+          <p className="back"><Icon path={mdiArrowLeftBold} title="Back" size={1}
+            color="#01024e"/><a href="#user">Go Back</a></p>
           <h1>Change Password</h1>
           <Form onSubmit={this.onChangePassword}>
             <Form.Group controlId="oldPassword">

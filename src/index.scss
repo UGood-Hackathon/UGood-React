@@ -22,8 +22,13 @@ body {
   text-align: center;
 }
 
-.back a {
-  color: #01024e !important;
+.back {
+  margin-bottom: .75rem;
+  margin-top: -1.75rem;
+  a {
+    color: #01024e !important;
+    font-size: 1.25rem;
+  }
 }
 
 .container {
@@ -31,8 +36,15 @@ body {
   justify-content: center;
 }
 
+
+
 .form {
   text-align: left;
+}
+
+.instructions,
+.disclaimer {
+  font-size: 1.25rem;
 }
 
 .link {
