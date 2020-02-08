@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
+import PasswordInput from '../PasswordShowHide/PasswordShowHide'
 
 import { changePassword } from '../../api/auth'
 // import { changePhone } from '../../api/auth'
@@ -103,23 +104,19 @@ class Edit extends Component {
           <h1>Change Password</h1>
           <Form onSubmit={this.onChangePassword}>
             <Form.Group controlId="oldPassword">
-              <Form.Label>Old password</Form.Label>
-              <Form.Control
+              <PasswordInput
                 required
                 name="oldPassword"
                 value={oldPassword}
-                type="password"
                 placeholder="Old Password"
                 onChange={this.handleChange}
               />
             </Form.Group>
             <Form.Group controlId="newPassword">
-              <Form.Label>New Password</Form.Label>
-              <Form.Control
+              <PasswordInput
                 required
                 name="newPassword"
                 value={newPassword}
-                type="password"
                 placeholder="New Password"
                 onChange={this.handleChange}
               />
