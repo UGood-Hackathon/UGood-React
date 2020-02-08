@@ -39,13 +39,4 @@ const User = (props) => {
   }
 }
 
-// const User = (props) => (
-//   <Fragment>
-//     <Button href="#edit">Edit Information</Button>
-//     <Button href="#sign-out">Sign Out</Button>
-//     <Button href="#sign-up">Sign Up</Button>
-//     <Button href="#sign-in">Sign In</Button>
-//   </Fragment>
-// )
-
 export default User

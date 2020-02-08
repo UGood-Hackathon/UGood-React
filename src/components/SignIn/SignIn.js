@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
+import PasswordInput from '../PasswordShowHide/PasswordShowHide'
 
 import { signIn } from '../../api/auth'
 import messages from '../AutoDismissAlert/messages'
@@ -8,6 +9,7 @@ import { mdiArrowLeftBold } from '@mdi/js'
 
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
+import TextField from '@material-ui/core/TextField'
 
 class SignIn extends Component {
   constructor () {
@@ -57,8 +59,8 @@ class SignIn extends Component {
           <h1>Sign In</h1>
           <Form onSubmit={this.onSignIn}>
             <Form.Group controlId="email">
-              <Form.Label>Email address</Form.Label>
-              <Form.Control
+              <br/>
+              <TextField
                 required
                 type="email"
                 name="email"
@@ -68,12 +70,11 @@ class SignIn extends Component {
               />
             </Form.Group>
             <Form.Group controlId="password">
-              <Form.Label>Password</Form.Label>
-              <Form.Control
+              <br/>
+              <PasswordInput
                 required
                 name="password"
                 value={password}
-                type="password"
                 placeholder="Password"
                 onChange={this.handleChange}
               />
