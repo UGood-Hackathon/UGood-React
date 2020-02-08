@@ -62,6 +62,7 @@ class SignUp extends Component {
           <Form onSubmit={this.onSignUp}>
             <Form.Group controlId="email">
               <TextField
+                fullWidth="true"
                 required
                 type="email"
                 name="email"
@@ -72,6 +73,7 @@ class SignUp extends Component {
             </Form.Group>
             <Form.Group controlId="password">
               <PasswordInput
+                fullWidth="true"
                 required
                 name="password"
                 value={password}
@@ -81,6 +83,7 @@ class SignUp extends Component {
             </Form.Group>
             <Form.Group controlId="passwordConfirmation">
               <PasswordInput
+                fullWidth="true"
                 required
                 name="passwordConfirmation"
                 value={passwordConfirmation}
@@ -90,6 +93,7 @@ class SignUp extends Component {
             </Form.Group>
             <Form.Group controlId="phone">
               <TextField
+                fullWidth="true"
                 required
                 name="phone"
                 value={phone}

@@ -61,6 +61,7 @@ class SignIn extends Component {
             <Form.Group controlId="email">
               <br/>
               <TextField
+                fullWidth="true"
                 required
                 type="email"
                 name="email"
@@ -72,6 +73,7 @@ class SignIn extends Component {
             <Form.Group controlId="password">
               <br/>
               <PasswordInput
+                fullWidth="true"
                 required
                 name="password"
                 value={password}

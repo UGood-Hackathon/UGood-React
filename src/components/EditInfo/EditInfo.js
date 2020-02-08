@@ -105,6 +105,7 @@ class Edit extends Component {
           <Form onSubmit={this.onChangePassword}>
             <Form.Group controlId="oldPassword">
               <PasswordInput
+                fullWidth="true"
                 required
                 name="oldPassword"
                 value={oldPassword}
@@ -114,6 +115,7 @@ class Edit extends Component {
             </Form.Group>
             <Form.Group controlId="newPassword">
               <PasswordInput
+                fullWidth="true"
                 required
                 name="newPassword"
                 value={newPassword}
