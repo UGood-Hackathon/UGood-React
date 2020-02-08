@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
+import PasswordInput from '../PasswordShowHide/PasswordShowHide'
 
 import { signUp, signIn } from '../../api/auth'
 import messages from '../AutoDismissAlert/messages'
@@ -8,6 +9,7 @@ import { mdiArrowLeftBold } from '@mdi/js'
 
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
+import TextField from '@material-ui/core/TextField'
 
 class SignUp extends Component {
   constructor () {
@@ -59,46 +61,40 @@ class SignUp extends Component {
           <h1>Sign Up</h1>
           <Form onSubmit={this.onSignUp}>
             <Form.Group controlId="email">
-              <Form.Label>Email address</Form.Label>
-              <Form.Control
+              <TextField
                 required
                 type="email"
                 name="email"
                 value={email}
-                placeholder="Enter email"
+                placeholder="Enter Email"
                 onChange={this.handleChange}
               />
             </Form.Group>
             <Form.Group controlId="password">
-              <Form.Label>Password</Form.Label>
-              <Form.Control
+              <PasswordInput
                 required
                 name="password"
                 value={password}
-                type="password"
                 placeholder="Password"
                 onChange={this.handleChange}
               />
             </Form.Group>
             <Form.Group controlId="passwordConfirmation">
-              <Form.Label>Password Confirmation</Form.Label>
-              <Form.Control
+              <PasswordInput
                 required
                 name="passwordConfirmation"
                 value={passwordConfirmation}
-                type="password"
                 placeholder="Confirm Password"
                 onChange={this.handleChange}
               />
             </Form.Group>
             <Form.Group controlId="phone">
-              <Form.Label>Phone Number</Form.Label>
-              <Form.Control
+              <TextField
                 required
                 name="phone"
                 value={phone}
                 type="phone"
-                placeholder="Ex. +16178675309"
+                placeholder="Enter Phone Number (Ex. +16178675309)"
                 onChange={this.handleChange}
               />
             </Form.Group>
