@@ -29,12 +29,15 @@ class SignUp extends Component {
 
   onSignUp = event => {
     event.preventDefault()
-
+    console.log(this.state)
     const { alert, history, setUser } = this.props
 
     signUp(this.state)
       .then(() => signIn(this.state))
-      .then(res => setUser(res.data.user))
+      .then(res => {
+        console.log(res)
+        setUser(res.data.user)
+      })
       .then(() => history.push({
         pathname: '/home',
         state: {}
@@ -97,7 +100,7 @@ class SignUp extends Component {
                 required
                 name="phone"
                 value={phone}
-                type="phone"
+                type="tel"
                 placeholder="Enter Phone Number (Ex. +16178675309)"
                 onChange={this.handleChange}
               />
